@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45EFAE462438C5F60099E2AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EFAE452438C5F60099E2AD /* AppDelegate.swift */; };
+		45EFAE482438C5F60099E2AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EFAE472438C5F60099E2AD /* SceneDelegate.swift */; };
+		45EFAE4A2438C5F60099E2AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EFAE492438C5F60099E2AD /* ViewController.swift */; };
+		45EFAE4D2438C5F60099E2AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45EFAE4B2438C5F60099E2AD /* Main.storyboard */; };
+		45EFAE4F2438C5F60099E2AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45EFAE4E2438C5F60099E2AD /* Assets.xcassets */; };
+		45EFAE522438C5F60099E2AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45EFAE502438C5F60099E2AD /* LaunchScreen.storyboard */; };
+		45EFAE5B2438D32E0099E2AD /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EFAE5A2438D32E0099E2AD /* AuthViewController.swift */; };
+		45EFAE5D2438DF6A0099E2AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45EFAE5C2438DF6A0099E2AD /* GoogleService-Info.plist */; };
+		45EFAE5F24390C1B0099E2AD /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EFAE5E24390C1B0099E2AD /* ForgotPassViewController.swift */; };
+		F0D3180DF9382D47CDDBF50F /* Pods_AuthPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEE7855F07DF589A6A14031 /* Pods_AuthPro.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		45EFAE422438C5F60099E2AD /* AuthPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45EFAE452438C5F60099E2AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45EFAE472438C5F60099E2AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		45EFAE492438C5F60099E2AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45EFAE4C2438C5F60099E2AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45EFAE4E2438C5F60099E2AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45EFAE512438C5F60099E2AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45EFAE532438C5F60099E2AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45EFAE5A2438D32E0099E2AD /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		45EFAE5C2438DF6A0099E2AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		45EFAE5E24390C1B0099E2AD /* ForgotPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
+		62F6153E4EBA235EB8689EB6 /* Pods-AuthPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthPro.debug.xcconfig"; path = "Target Support Files/Pods-AuthPro/Pods-AuthPro.debug.xcconfig"; sourceTree = "<group>"; };
+		9C16F18FEDFBF0CD7A6FE026 /* Pods-AuthPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthPro.release.xcconfig"; path = "Target Support Files/Pods-AuthPro/Pods-AuthPro.release.xcconfig"; sourceTree = "<group>"; };
+		CCEE7855F07DF589A6A14031 /* Pods_AuthPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45EFAE3F2438C5F60099E2AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D3180DF9382D47CDDBF50F /* Pods_AuthPro.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45EFAE392438C5F60099E2AD = {
+			isa = PBXGroup;
+			children = (
+				45EFAE442438C5F60099E2AD /* AuthPro */,
+				45EFAE432438C5F60099E2AD /* Products */,
+				F8DD43B433A0F641B54C3CCF /* Pods */,
+				C95E0D75AAC18F67562625A8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		45EFAE432438C5F60099E2AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45EFAE422438C5F60099E2AD /* AuthPro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45EFAE442438C5F60099E2AD /* AuthPro */ = {
+			isa = PBXGroup;
+			children = (
+				45EFAE592438D2EA0099E2AD /* ViewControllers */,
+				45EFAE452438C5F60099E2AD /* AppDelegate.swift */,
+				45EFAE472438C5F60099E2AD /* SceneDelegate.swift */,
+				45EFAE492438C5F60099E2AD /* ViewController.swift */,
+				45EFAE4B2438C5F60099E2AD /* Main.storyboard */,
+				45EFAE4E2438C5F60099E2AD /* Assets.xcassets */,
+				45EFAE502438C5F60099E2AD /* LaunchScreen.storyboard */,
+				45EFAE532438C5F60099E2AD /* Info.plist */,
+				45EFAE5C2438DF6A0099E2AD /* GoogleService-Info.plist */,
+			);
+			path = AuthPro;
+			sourceTree = "<group>";
+		};
+		45EFAE592438D2EA0099E2AD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				45EFAE5A2438D32E0099E2AD /* AuthViewController.swift */,
+				45EFAE5E24390C1B0099E2AD /* ForgotPassViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C95E0D75AAC18F67562625A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCEE7855F07DF589A6A14031 /* Pods_AuthPro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8DD43B433A0F641B54C3CCF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62F6153E4EBA235EB8689EB6 /* Pods-AuthPro.debug.xcconfig */,
+				9C16F18FEDFBF0CD7A6FE026 /* Pods-AuthPro.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45EFAE412438C5F60099E2AD /* AuthPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45EFAE562438C5F60099E2AD /* Build configuration list for PBXNativeTarget "AuthPro" */;
+			buildPhases = (
+				4A8D84ED13A1849FF6D24C7B /* [CP] Check Pods Manifest.lock */,
+				45EFAE3E2438C5F60099E2AD /* Sources */,
+				45EFAE3F2438C5F60099E2AD /* Frameworks */,
+				45EFAE402438C5F60099E2AD /* Resources */,
+				7025E7CC68C3E4B66980852D /* [CP] Embed Pods Frameworks */,
+				A5C91BBBF05646FB1891E356 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AuthPro;
+			productName = AuthPro;
+			productReference = 45EFAE422438C5F60099E2AD /* AuthPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45EFAE3A2438C5F60099E2AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Islam;
+				TargetAttributes = {
+					45EFAE412438C5F60099E2AD = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 45EFAE3D2438C5F60099E2AD /* Build configuration list for PBXProject "AuthPro" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45EFAE392438C5F60099E2AD;
+			productRefGroup = 45EFAE432438C5F60099E2AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45EFAE412438C5F60099E2AD /* AuthPro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45EFAE402438C5F60099E2AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45EFAE522438C5F60099E2AD /* LaunchScreen.storyboard in Resources */,
+				45EFAE5D2438DF6A0099E2AD /* GoogleService-Info.plist in Resources */,
+				45EFAE4F2438C5F60099E2AD /* Assets.xcassets in Resources */,
+				45EFAE4D2438C5F60099E2AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A8D84ED13A1849FF6D24C7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AuthPro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7025E7CC68C3E4B66980852D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthPro/Pods-AuthPro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthPro/Pods-AuthPro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AuthPro/Pods-AuthPro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5C91BBBF05646FB1891E356 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthPro/Pods-AuthPro-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthPro/Pods-AuthPro-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AuthPro/Pods-AuthPro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45EFAE3E2438C5F60099E2AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45EFAE5F24390C1B0099E2AD /* ForgotPassViewController.swift in Sources */,
+				45EFAE5B2438D32E0099E2AD /* AuthViewController.swift in Sources */,
+				45EFAE4A2438C5F60099E2AD /* ViewController.swift in Sources */,
+				45EFAE462438C5F60099E2AD /* AppDelegate.swift in Sources */,
+				45EFAE482438C5F60099E2AD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		45EFAE4B2438C5F60099E2AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45EFAE4C2438C5F60099E2AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45EFAE502438C5F60099E2AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45EFAE512438C5F60099E2AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45EFAE542438C5F60099E2AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45EFAE552438C5F60099E2AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45EFAE572438C5F60099E2AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62F6153E4EBA235EB8689EB6 /* Pods-AuthPro.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U63823ANYA;
+				INFOPLIST_FILE = AuthPro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = islam.AuthPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45EFAE582438C5F60099E2AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C16F18FEDFBF0CD7A6FE026 /* Pods-AuthPro.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U63823ANYA;
+				INFOPLIST_FILE = AuthPro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = islam.AuthPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45EFAE3D2438C5F60099E2AD /* Build configuration list for PBXProject "AuthPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45EFAE542438C5F60099E2AD /* Debug */,
+				45EFAE552438C5F60099E2AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45EFAE562438C5F60099E2AD /* Build configuration list for PBXNativeTarget "AuthPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45EFAE572438C5F60099E2AD /* Debug */,
+				45EFAE582438C5F60099E2AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45EFAE3A2438C5F60099E2AD /* Project object */;
+}
