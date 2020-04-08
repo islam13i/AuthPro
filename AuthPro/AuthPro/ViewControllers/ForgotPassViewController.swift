@@ -7,12 +7,9 @@
  //
  
  import UIKit
- import FirebaseAuth
+ import Firebase
  class ForgotPassViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
-    override func viewDidLoad() {
-        
-    }
     
     @IBAction func forgotPasswordAction(_ sender: Any) {
         let email = emailField.text!

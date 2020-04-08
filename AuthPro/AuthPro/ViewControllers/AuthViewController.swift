@@ -41,6 +41,7 @@ class AuthViewController: UIViewController {
         GIDSignIn.sharedInstance()?.presentingViewController = self
         facebookGoogleBtnLayouts()
     }
+    
     func facebookGoogleBtnLayouts() {
         let buttonFB = FBLoginButton()
         buttonFB.delegate = self

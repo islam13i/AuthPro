@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-import FBSDKCoreKit
+import FBSDKLoginKit
 import GoogleSignIn
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         ApplicationDelegate.shared.application(app, open: url, options: options)
     }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
@@ -35,21 +36,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if user == nil{
-                 return
-             }
-             if let error = error{
-                 print(error)
-             }
-             guard let authentication = user.authentication else { return  }
-             let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
-             Auth.auth().signIn(with: credential){(result, error) in
-                 if let error = error{
-                     print(error)
-                     return
-                 }
-                print(result?.user.uid as Any)
-                
-             }
+            return
+        }
+        if let error = error{
+            print(error)
+        }
+        guard let authentication = user.authentication else { return  }
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
+        Auth.auth().signIn(with: credential){(result, error) in
+            if let error = error{
+                print(error)
+                return
+            }
+            print(result?.user.uid as Any)
+            
+        }
     }
 }
 

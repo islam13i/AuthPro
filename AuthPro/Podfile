@@ -3,14 +3,15 @@
 
 target 'AuthPro' do
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  #use_frameworks!
 	
-  pod 'Firebase/Analytics'
-  pod 'Firebase/Auth'
-  pod 'FirebaseUI/Auth'
-  pod 'Firebase/Database'
-  pod 'FBSDKLoginKit'
-  pod 'GoogleSignIn'
-  # Pods for AuthPro
+  pod 'Firebase/Analytics', :modular_headers => true
+  pod 'Firebase/Auth', :modular_headers => true
+  pod 'FirebaseUI/Auth', :modular_headers => true
+  pod 'Firebase/Database', :modular_headers => true
+  pod 'FBSDKLoginKit', :modular_headers => true
+  pod 'GoogleSignIn', :modular_headers => true
+  pod 'NVActivityIndicatorView', '~> 4.4.0', :modular_headers => true
+  # Pods for AuthPro:
 
 end
