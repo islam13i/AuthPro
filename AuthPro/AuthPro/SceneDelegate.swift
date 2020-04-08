@@ -17,6 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         Auth.auth().addStateDidChangeListener{ (auth, user) in
             if user == nil {
                 self.showModalAuth()
+            }else{
+                self.window?.rootViewController?.dismiss(animated: true, completion: nil)
             }
         }
         

@@ -9,12 +9,15 @@
 import UIKit
 import Firebase
 import FBSDKLoginKit
+import GoogleSignIn
+import FirebaseUI
 class AuthViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var enterButton: UIButton!
+    @IBOutlet weak var phoneButton: UIButton!
     
     var signUp: Bool = true{
         willSet{
@@ -35,15 +38,30 @@ class AuthViewController: UIViewController {
         nameField.delegate = self
         emailField.delegate = self
         passwordField.delegate = self
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        facebookGoogleBtnLayouts()
+    }
+    func facebookGoogleBtnLayouts() {
         let buttonFB = FBLoginButton()
         buttonFB.delegate = self
         buttonFB.permissions = ["email", "public_profile"]
         self.view.addSubview(buttonFB)
         buttonFB.translatesAutoresizingMaskIntoConstraints = false
         buttonFB.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        buttonFB.topAnchor.constraint(equalTo: enterButton.bottomAnchor, constant: 100).isActive = true
+        buttonFB.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 25).isActive = true
+        buttonFB.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -25).isActive = true
+        buttonFB.topAnchor.constraint(equalTo: phoneButton.bottomAnchor, constant: 20).isActive = true
+        
+        let buttonGoogle = GIDSignInButton()
+        self.view.addSubview(buttonGoogle)
+        buttonGoogle.translatesAutoresizingMaskIntoConstraints = false
+        buttonGoogle.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        buttonGoogle.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
+        buttonGoogle.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
+        buttonGoogle.topAnchor.constraint(equalTo: buttonFB.bottomAnchor, constant: 20).isActive = true
+        
+        
     }
-    
     @IBAction func switchLogin(_ sender: Any) {
         signUp = !signUp
     }
@@ -111,6 +129,7 @@ extension AuthViewController: UITextFieldDelegate{
 
 
 extension AuthViewController: LoginButtonDelegate{
+    
     func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
         if error == nil{
             GraphRequest(graphPath: "me", parameters: ["fields:":"email,name"], tokenString: AccessToken.current?.tokenString, version: nil, httpMethod: .get).start(completionHandler: {
@@ -136,3 +155,4 @@ extension AuthViewController: LoginButtonDelegate{
     }
     
 }
+
